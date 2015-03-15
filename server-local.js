@@ -1,10 +1,16 @@
 var static = require('node-static');
 var file = new static.Server('./dist');
 
-var http = require('http');
+var https = require('https');
 var fs = require('fs');
 
-http.createServer(function (request, response) {
+var options = {
+  key: fs.readFileSync('./key.pem', 'utf8'),
+  cert: fs.readFileSync('./server.crt', 'utf8')
+};
+
+
+https.createServer(options, function (request, response) {
 
 	if(request.url == '/'){
 		response.writeHead(302,	{Location: '/app/index.html'});
@@ -22,4 +28,4 @@ http.createServer(function (request, response) {
 
 
 var childProcess = require('child_process'); 
-childProcess.exec('open -a "/Applications/Google Chrome.app" http://localhost:7474/ --args --kiosk');
+childProcess.exec('open -a "/Applications/Google Chrome.app" https://localhost:7474/ --args --kiosk');

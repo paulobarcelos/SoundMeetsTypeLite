@@ -57,6 +57,7 @@
 	z-index: 200;
 	width: 200px;
 	height: 100px;
+	display: none;
 }
 #logo.white path{
 	fill: white;
