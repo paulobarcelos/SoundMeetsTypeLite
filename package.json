@@ -7,8 +7,7 @@
     "happy-toolkit" : "x",
     "requirejs" : "x",
     "node-static": "x",
-    "rsvp" : "x",
-    "https" : "x"
+    "rsvp" : "x"
     },
   "license": "WTFPL",
   "main": "server.js",
