@@ -913,6 +913,7 @@ function (
 		}
 
 		self.onKeyUp = function(e){
+			if(e.keyCode == 9) return;
 			if(creatingMesh) return;
 			currentLetterIndex++;
 			if(currentLetterIndex > letters.length -1){
