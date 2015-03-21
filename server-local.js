@@ -35,6 +35,6 @@ childProcess.exec(
 	'sleep 30; '+
 	'killall "Chromimum"; '+
 	'sleep 10; '+
-	'open -n -a "/Applications/Chromimum.app" --args --kiosk --allow-insecure-localhost; '+
+	'open  /Applications/Chromimum.app --args --kiosk --allow-insecure-localhost; '+
 	'sleep 20; '+
 	'osascript ./setfocus.scpt' );
