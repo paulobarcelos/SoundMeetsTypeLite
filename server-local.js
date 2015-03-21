@@ -33,8 +33,8 @@ var childProcess = require('child_process');
 
 childProcess.exec(
 	'sleep 30; '+
-	'killall "Google Chrome"; '+
+	'killall "Chromimum"; '+
 	'sleep 10; '+
-	'open -n -a "/Applications/Google Chrome.app" --args --kiosk --allow-insecure-localhost; '+
+	'open -n -a "/Applications/Chromimum.app" --args --kiosk --allow-insecure-localhost; '+
 	'sleep 20; '+
 	'osascript ./setfocus.scpt' );

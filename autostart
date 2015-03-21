@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /Users/paulobarcelos/Desktop/SoundMeetsTypeLite/
+/usr/local/bin/node /Users/paulobarcelos/Desktop/SoundMeetsTypeLite/server-local.js
